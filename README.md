@@ -1,4 +1,5 @@
-# Vue 3 example with Pinia
+# SVGr 
+its going to do things for you - 
 
 ## Usage
 
