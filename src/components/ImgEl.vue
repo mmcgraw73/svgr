@@ -1,5 +1,5 @@
 <template>
-
+<h1>DOODOO STINKS</h1>
 </template>
 import { defineComponent } from "vue"
 <script>
@@ -12,7 +12,7 @@ export default defineComponent ({
   },
   computed: {
     svgstr() {
-      return this.svgdata || null
+      return `${this.svgdata}` || null
     }
   }
 })

@@ -1,9 +1,10 @@
+
 <template>
   <Layout>
     <div>
       
 
-      <form @submit.prevent="addItemToCart" data-testid="add-items">
+      <!-- <form @submit.prevent="addItemToCart" data-testid="add-items">
         <input type="text" v-model="itemName" />
         <button>Add</button>
       </form>
@@ -26,20 +27,22 @@
           type="button"
           data-testid="clear"
         >Clear the cart</button>
-      </form>
+      </form> -->
+      <ImgEl />
     </div>
   </Layout>
 </template>
 
 <script lang="ts">
 import Layout from './layouts/default.vue'
-
+// @ts-ignore.
+import ImgEl from './components/ImgEl.vue'
 import { defineComponent, ref } from 'vue'
 import { useUserStore } from './stores/user'
 import { useCartStore } from './stores/cart'
 
 export default defineComponent({
-  components: { Layout },
+  components: { Layout, ImgEl },
 
   setup() {
     const user = useUserStore()
